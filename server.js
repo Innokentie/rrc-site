@@ -82,6 +82,6 @@ connection.query("SELECT * FROM users", function(err, result){
 
 const { PORT=3000, LOCAL_ADDRESS='0.0.0.0' } = process.env
 httpServer.listen(PORT, LOCAL_ADDRESS, () => {
-    const address = server.address();
+    const address = httpServer.address();
     console.log('Server ready!', address);
 });
