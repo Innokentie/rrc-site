@@ -80,5 +80,8 @@ connection.query("SELECT * FROM users", function(err, result){
 });
 */
 
-
-httpServer.listen(3000, () => console.log('Server ready!'));
+const { PORT=3000, LOCAL_ADDRESS='0.0.0.0' } = process.env
+httpServer.listen(PORT, LOCAL_ADDRESS, () => {
+    const address = server.address();
+    console.log('Server ready!', address);
+});
