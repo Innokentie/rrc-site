@@ -22,18 +22,18 @@ header {
 
 .header_image img {
 	position: relative;
-	top: 0;
+	top: -4px;
 	left: 30px;
-	width: 190px;
-	height: 100px;
+	width: 205px;
+	height: 110px;
 	transition-duration: 0.1s;
 }
 
 .header_image img:hover {
-	top: -1px;
+	top: -5px;
 	left: 29px;
-	width: 192px;
-	height: 102px;
+	width: 208px;
+	height: 113px;
 }
 
 .login_panel {
